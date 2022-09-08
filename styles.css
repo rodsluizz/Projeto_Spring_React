@@ -1,0 +1,168 @@
+:root{
+    --text-color: #fff;
+    --primary-color: #304352;
+    --secondary-color: #d7d2cc;
+    --tertiary-color: #141212;
+    --color-logo: #5FB0E5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+body{
+    background-color: var(--secondary-color);
+}
+
+/*HEADER*/
+
+#header{
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    padding-top: 2em;
+}
+
+#header h1{
+    margin-bottom: 1.5em;
+}
+
+#header h3{
+    font-weight: 400;
+}
+
+#media-icons{
+    padding-bottom: 1em;
+}
+
+#media-icons a i{
+    font-size: 2em;
+    color: var(--text-color);
+}
+
+#media-icons a i:hover{
+    font-size: 2em;
+    color: var(--color-logo);
+}
+
+/*MAIN*/
+
+#sales{
+    padding: 40px 10px;
+}
+
+.dsmeta-container{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.dsmeta-card{
+    background-color: #304352;
+    border-radius: 10px;
+    padding: 30px 10px;
+}
+
+.dsmeta-card h2{
+    font-size: 24;
+    font-weight: 700;
+    color: var(--color-logo);
+    margin-bottom: 20px;
+}
+
+.icon-sms:hover{
+    font-size: 1.5em;
+    color: rgb(94, 241, 94);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.dsmeta-form-control-container{
+    margin-bottom: 16px;
+}
+
+.dsmeta-form-control{
+    max-width: 300px;
+    width: 100%;
+    height: 46px;
+    padding: 0px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+
+.dsmeta-sales-table{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.dsmeta-sales-table thead{
+    width: 280px;
+    height: 55px;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--tertiary-color);
+    text-align: center;
+    background-color: var(--color-logo);
+}
+
+.dsmeta-sales-table tbody{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.tbody-tr{
+    border-top: 1px solid var(--tertiary-color);
+    height: 74px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.tbody-tr:nth-child(odd){
+    background-color: #223d52;
+}
+
+.tbody-tr:hover{
+    background-color: #40505c;
+}
+
+.show576{
+    display: none;
+}
+
+.show992{
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .show576{
+        display: table-cell;
+    }
+
+    .dsmeta-card{
+        padding: 35px;
+    }
+
+    .dsmeta-sales-table tbody{
+        font-size: 18px;
+    }
+
+    .tbody-tr{
+        height: 55px;
+    }
+}
+
+@media (min-width: 992px) {
+    .show992{
+        display: table-cell;
+    }
+}
+
